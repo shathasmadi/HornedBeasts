@@ -1,9 +1,10 @@
+// eslint-disable-next-line no-unused-vars
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Header from './componant/header';
-import Main from './componant/main';
-import Footer from './componant/footer';
+import Header from './componant/Header';
+import Main from './componant/Main';
+import Footer from './componant/Footer';
 
 class App extends React.Component{
   render(){
