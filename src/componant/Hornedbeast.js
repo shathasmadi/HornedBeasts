@@ -1,29 +1,29 @@
 
 
-    import React from 'react';
-    class HornedBeast extends React.Component{
-        constructor(props){
-            super(props);
-            this.state={
-                voteValue:0
-            }
+import React from 'react';
+class HornedBeast extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            voteValue: 0
         }
-        voteFun=() => {
-            let value = this.state.voteValue;
-            this.setState({voteValue:value+=1})
-        }
-        render(){
-            return(
+    }
+    voteFun = () => {
+        let value = this.state.voteValue;
+        this.setState({ voteValue: value += 1 })
+    }
+    render() {
+        return (
             <div>
                 <h2>{this.props.title}</h2>
-                <p> {this.state.voteValue}</p>
+                <p>{this.state.voteValue}</p>
                 <img src={this.props.img} alt={this.props.keyword} onClick={this.voteFun} />
                 <p>{this.props.description}</p>
             </div>
-            )
-            }
-    } 
-    export default HornedBeast;
+        )
+    }
+}
+export default HornedBeast;
 
 
 
@@ -60,14 +60,14 @@
 //        </p>
 //       </div>
 //      </div>
- 
+
 //     )
 //     }
- 
+
 //   }
- 
+
 //   export default Hornedbeast;
- 
+
 
 
 
