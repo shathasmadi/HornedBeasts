@@ -15,6 +15,11 @@ class App extends React.Component {
       , selectedBeast: {}
     }
   }
+  updateForm = (newHorn) => {
+    this.setState({
+      Data: newHorn
+    })
+  }
   selectedUpdate = (title) => {
     let selected = [];
     Data.forEach((beast) => {
@@ -31,10 +36,16 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <Main
-          Data={this.state.Data}
-          selectedUpdate={this.selectedUpdate}
-        />
+        {/* <UserForm
+        listHandle={this.listHandle}
+        /> */}
+        <div style={{ display: 'flex', 'flex-wrap': 'wrap', gap: '0.8em', 'justify-content': 'center' }}>
+          <Main
+            updateForm={this.updateForm}
+            Data={this.state.Data}
+            selectedUpdate={this.selectedUpdate}
+          />
+        </div>
         <SelectedBeast
           Data={this.state.selectedBeast}
           show={this.state.showModel}
