@@ -27,7 +27,7 @@ class HornedBeast extends React.Component {
                         <p>{this.state.voteCount}</p>
                     </Card.Text>
                 </Card.Body>
-              
+
             </Card>
         )
     }

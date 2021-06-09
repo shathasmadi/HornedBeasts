@@ -20,7 +20,7 @@ class SelectedBeast extends React.Component {
                     <Button variant="secondary" onClick={this.handleClose}>
                         Close
         </Button>
-    
+
                 </Modal.Footer>
             </Modal>
         )
